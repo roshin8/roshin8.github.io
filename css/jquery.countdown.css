@@ -1,0 +1,113 @@
+/* jQuery Countdown styles 1.6.3. */
+.hasCountdown {
+overflow: hidden;
+}
+.countdown_rtl {
+	direction: rtl;
+}
+.countdown_holding span {
+	color: #fff;
+}
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown_show1 .countdown_section {
+	width: 98%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+}
+.countdown_show2 .countdown_section {
+	width: 48%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+	line-height: 1.1;
+}
+.countdown_show3 .countdown_section {
+	width: 32.5%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+	line-height: 1.1;
+}
+.countdown_show4 .countdown_section {
+	width: 24.5%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+	line-height: 1.1;
+}
+.countdown_show5 .countdown_section {
+	width: 19.5%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+	line-height: 1.1;
+}
+.countdown_show6 .countdown_section {
+	width: 16.25%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+	line-height: 1.1;
+}
+.countdown_show7 .countdown_section {
+	width: 14%;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: #FF6445;
+	margin: 0;
+	line-height: 1.1;
+}
+.countdown_section {
+	width: 120px !important;
+	position: relative;
+	left: 25.6%;
+	display: block;
+	margin: 0 auto;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+}
+.countdown_amount {
+	font-size: 56px;
+	color: #fff;
+	font-weight: 800;
+	font-family: 'Lato';
+}
+.countdown_descr {
+	color: #fff;
+	display: block;
+	width: 100%;
+}

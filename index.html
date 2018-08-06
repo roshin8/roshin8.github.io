@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!--
+<script type="text/javascript">
+var isChromium = window.chrome,
+    vendorName = window.navigator.vendor,
+    isOpera = window.navigator.userAgent.indexOf("OPR") > -1,
+    isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false) {
+   //
+} else { 
+   location.replace("http://m.roshinvarghese.com");
+}
+</script>
+-->
+
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="height=device-height" />
+    <title>Roshin Varghese</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--
+	<script>
+		if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)){
+		if(document.URL !="http://roshinvarghese.com")
+		{
+		window.location ="http://m.roshinvarghese.com";
+		}
+		}
+	</script>
+	-->
+	
+	<!-- Moving Background -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet prefetch' type='text/css'>
+    
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+	
+	<!--Vcard Related -->
+	<link rel="stylesheet" href="css/normalize2.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style2.css">
+	
+	
+	
+	<!-- Circular Slideshow Related -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+		
+		
+		
+	<!-- Buttons Related -->
+	<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/vicons-font.css" />	 -->	
+	<!-- This is also for Button -->
+	<style>
+		*:after,
+		*:before {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+	</style>
+		
+	
+	</head>
+	
+	
+	
+	<body>
+		
+		<!-- Moving Background -->
+		<div class="loaderContainer">
+			<img src="img/loader.gif" alt="Loader" width="220" height="20">
+		</div>
+    
+		<div id="container" class="container">
+			<div id="output" class="container"></div>
+			<div id="vignette" class="overlay vignette"></div>
+			<div id="noise" class="overlay noise"></div>
+			<div id="ui" class="wrapper"></div>
+		</div>
+		<div id="controls" class="controls"></div> 
+		
+		
+		
+		
+		
+		<div class="cards">
+	
+					<div class="contact">Contact Me</div>
+						<div class="contact-form">
+							<a href="#" class="close"><i class="fa fa-times"></i></a>
+							<iframe src="mail.php" frameborder="0" border="0" cellspacing="0" style="border-style: none;width: 100%; height: 400px;">
+												  <p>Your browser does not support iframes.</p>
+											</iframe>
+							
+							<!-- 
+							<form action='<?php echo htmlentities($_SERVER['PHP_SELF']); ?>' Method="POST">
+								  <input name="name" placeholder="Name" type="text"  value="" required>
+								  <input name="email" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+								  <span class="validation-text">Please enter a valid email address.</span>
+								  <input name="location" placeholder="Location" type="text" value="" required>
+								  <div class="cflex">
+									<textarea name="message" placeholder="Message" rows="1" required></textarea>
+									</div>
+									
+								  <div><?php echo $msg ?></div>
+								  
+									<button type="sumbit" class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" data-color="#d2181c">Submit
+										<i class="fa fa-paper-plane"></i>
+									</button>
+							</form> -->
+						</div>
+						
+						 <div class="card active" id="overview">
+							<a class="card-toggle"><i class="fa fa-arrow-circle-left"></i></a>
+							<div class="card-content">
+								<div class="row">
+									<div class="left col">
+										<h2>Hello <strong>WORLD!</strong></h2>
+										<p>Welcome to my Portfolio</p>
+										<p>Click one of the social icons below to switch between cards or click 'Contact Me' button above to contact me. <br /><em>Make sure you're using latest Chrome browser.</em></p>
+										
+									</div>
+									<div class="right col">
+									</div>
+								</div>
+							</div>
+						</div> 
+						
+
+						<div class="card" id="dribbble">
+							<a class="card-toggle"><i><span class="fa fa-instagram"></span></i></a>
+							<div class="card-content">
+								<div class="row">
+									<div class="left col">
+										<h2>My <strong>Instagram</strong></h2>
+										
+										<p>Sometimes I pretend to be a professional Photographer when in reality I'm just an amateur. View my eye through the lens of my camera on Instagram.</p>
+										<br>
+										
+											<button id="IGButton" class="button button--itzel button--text-thick button--text-upper button--border-thick button--size-s"><i class="button__icon fa fa-external-link"></i><span>Visit</span></button>
+										
+										
+									</div>
+									<div class="right col">
+										
+											<iframe src="slider.html" frameborder="0" border="0" cellspacing="0" style="border-style: none;width: 100%; height: 520px;">
+												  <p>Your browser does not support iframes.</p>
+											</iframe>
+										
+									
+									</div>
+								</div>
+							</div>
+						</div> 
+						
+						<div class="card" id="behance">
+							<a class="card-toggle"><i><span class="fa fa-facebook"></span></i></a>
+							<div class="card-content">
+								<div class="row">
+									<div class="left col">
+										<h2>My <strong>Facebook</strong></h2>
+										<p>Not an avid Facebook user. I use it to take a gulity pleasure of not wanting to do anything productive. I do post interesting things at times.</p>
+										<br>
+										<button id="FBButton" class="button button--nanuk button--text-thick button--text-upper button--size-s button--border-thick button--round-s">
+												<span>V</span><span>I</span><span>S</span><span>I</span><span>T</span>
+											</button>
+									</div>
+									<div class="right col"><img src="img/fb.gif" alt="" /></div>
+								</div>
+							</div>
+						</div>
+						<div class="card" id="linkedin">
+							<a class="card-toggle"><i><span class="fa fa-linkedin"></span></i></a>
+							<div class="card-content">
+								<div class="row">
+									<div class="left col">
+										<h2>My <strong>LinkedIn</strong></h2>
+									
+										<p>Get to know my Busines Ventures and skills. Who knows, I might impress you *wink wink*</p>
+										<br>
+										<br>
+										<button id="LNButton" class="button button--sacnite button--round-s button--inverted"><i class="button__icon fa fa-external-link fa-2x"></i><span>User</span></button>
+										
+									</div>
+									<div class="right col"><img src="img/ln.png" alt="" /></div>
+								</div>
+							</div>
+						</div>
+						<div class="card" id="twitter">
+							<a class="card-toggle"><i><span class="fa fa-twitter"></span></i></a>
+							<div class="card-content">
+								<div class="row">
+									<div class="left col">
+										<h2>My <strong>Twitter</strong></h2>
+									
+										<p>Can't remember the last time I tweeted. But you're welcome to follow me just in case I decide to become a frequent Tweeter. You don't wanna miss out on my Tweets ;)</p>
+										<br>
+										<button id="TWButton" class="button button--naira button--border-thick button--text-thick button--text-upper button--size-s button--naira-up"><i class="button__icon fa fa-external-link fa-2x"></i><span>Visit</span></button>
+									</div>
+									<div class="right col"><img src="img/twitter.gif" alt="" /></div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+		
+
+
+		
+		
+		<!-- Circular Slideshow -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="js/jquery.flipshow.js"></script>
+		<script>
+			$( function() {
+				
+				$( '#fc-slideshow' ).flipshow();
+
+			} );
+		</script>
+		
+		
+		<!-- Moving Background -->
+		<script src="js/main.js"></script>
+		<!-- <script src="js/tweetable.jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.countdown.js" type="text/javascript"></script> -->
+		<script src="js/prefixr.js" type="text/javascript"></script> 
+		<script src="js/dat.gui.js" type="text/javascript"></script>
+		<script src="deploy/fss.js"></script>
+		<script src="js/examples.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.loaderContainer').fadeOut('slow');
+			});
+		</script>
+	
+		<script src="js/index.js"></script>
+	
+		<!-- Buttons -->
+		<script>
+		$('#IGButton').click(function () {
+			var redirectWindow = window.open('https://www.instagram.com/roshin8/', '_blank');
+			$.ajax({
+				type: 'POST',
+				url: '/echo/json/',
+				success: function (data) {
+					redirectWindow.location;
+				}
+			});
+		});
+		
+		$('#FBButton').click(function () {
+			var redirectWindow = window.open('https://www.facebook.com/roshinrulz8/', '_blank');
+			$.ajax({
+				type: 'POST',
+				url: '/echo/json/',
+				success: function (data) {
+					redirectWindow.location;
+				}
+			});
+		});
+		
+		$('#LNButton').click(function () {
+			var redirectWindow = window.open('https://www.linkedin.com/in/roshin8', '_blank');
+			$.ajax({
+				type: 'POST',
+				url: '/echo/json/',
+				success: function (data) {
+					redirectWindow.location;
+				}
+			});
+		});
+		
+		$('#TWButton').click(function () {
+			var redirectWindow = window.open('https://twitter.com/roshin_jay', '_blank');
+			$.ajax({
+				type: 'POST',
+				url: '/echo/json/',
+				success: function (data) {
+					redirectWindow.location;
+				}
+			});
+		});
+		</script>
+		
+		
+		
+	</body>
+</html>
