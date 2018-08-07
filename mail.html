@@ -277,8 +277,14 @@ if(isset($_POST['submit']))
 <body>
 
 <p>
-		<form action='#' Method="POST">
-			  <input name="name" placeholder="Name" type="text"  value="" required>
+		<form action="https://formspree.io/theroshin@gmail.com" method="POST">
+		    <input type="text" name="name">
+		    <input type="email" name="_replyto">
+		    <input type="submit" value="Send">
+		</form>
+
+		<form action='https://formspree.io/theroshin@gmail.com' Method="POST">
+			  <input name="name" placeholder="Name" type="text" value="" required>
 			  <input name="email" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
 			  <span class="validation-text">Please enter a valid email address.</span>
 			  <input name="location" placeholder="Location" type="text" value="" required>
@@ -286,9 +292,9 @@ if(isset($_POST['submit']))
 				<textarea name="message" placeholder="Message" rows="1" required></textarea>	
 				<br>
 				<br>				
-				</div>
-				<div id="text" class="button--text-thick button--text-upper button--size-s"><?php echo $msg ?>&nbsp;&nbsp;&nbsp;
-				<button type='submit' class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" name='submit' value='Submit'>Submit</button>
+			  </div>
+			  <div id="text" class="button--text-thick button--text-upper button--size-s"><?php echo $msg ?>&nbsp;&nbsp;&nbsp;
+				<button type='submit' class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" name='submit' value='Submit'>Send</button>
 			</div>
 		</form>
 </p>
