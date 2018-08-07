@@ -287,13 +287,27 @@ if(isset($_POST['submit']))
 				<br>
 				<br>				
 			  </div>
-			  <div id="text" class="button--text-thick button--text-upper button--size-s"><?php echo $msg ?>&nbsp;&nbsp;&nbsp;
-				<button type='submit' class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" name='submit' value='Submit' onclick="parent.document.getElementById('form-bg').style.backgroundColor='#f1f1fa';">Send</button>
+			  <div id="text" class="button--text-thick button--text-upper button--size-s">&nbsp;&nbsp;&nbsp;
+				<button type='submit' class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" name='submit' value='Submit' >Send</button>
 			</div>
 		</form>
 </p>
 
 <!-- Contact Submit Button -->
 	<script src="../js/m-index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $form = $('form');
+	    $form.submit(function(){
+	      $.post($(this).attr('action'), $(this).serialize(), function(response){
+	    		parent.document.getElementById('form-bg').style.backgroundColor='#f1f1fa';
+	      },'json');
+	      return false;
+	    });
+    });
+</script>
+    
+
 </body>
 </html>
