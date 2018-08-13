@@ -50,9 +50,48 @@ if(isset($_POST['submit']))
  -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
+<body>
+
+<p>
+<form action='https://formspree.io/theroshin@gmail.com' Method="POST">
+	<input name="name" placeholder="Name" type="text" value="" required>
+	<input name="email" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+	<span class="validation-text">Please enter a valid email address.</span>
+	<input name="location" placeholder="Location" type="text" value="" required>
+	<div class="cflex">
+		<textarea name="message" placeholder="Message" rows="1" required></textarea>
+		<br>
+		<br>
+	</div>
+	<div id="text" class="button--text-thick button--text-upper button--size-s">&nbsp;&nbsp;&nbsp;
+		<button type='submit' class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" name='submit' value='Submit' >Send</button>
+	</div>
+</form>
+</p>
+
+<!-- Contact Submit Button -->
+<script src="../js/m-index.js"></script>
+
+<!-- Change background info on submit to match formspree.io -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $form = $('form');
+	    $form.submit(function(){
+	      $.post($(this).attr('action'), $(this).serialize(), function(response){
+	    		parent.document.getElementById('form-bg').style.backgroundColor='#f1f1fa';
+	      },'json');
+	      return false;
+	    });
+    });
+</script>
+
+
+</body>
+
 <head>
 	<title>Test form to email</title>
-	
+
 	<!-- Contact Form -->
 	<style>
 		form {
@@ -64,7 +103,7 @@ if(isset($_POST['submit']))
 			border-radius: 3px;
 			color: #555;
 			}
-	
+
 		input::-webkit-input-placeholder,
 		textarea::-webkit-input-placeholder {
 		  font: inherit;
@@ -185,7 +224,7 @@ if(isset($_POST['submit']))
 		.cflex textarea {
 		  line-height: 120%;
 		}
-</style>		
+</style>
 
 	<!-- Materialize Button -->
  	<style>
@@ -206,7 +245,7 @@ if(isset($_POST['submit']))
 		  text-transform: uppercase;
 		  width: 150px;
 		  height: 40px;
-		  
+
 		  float:right;
 		  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		  transition: all 0.2s ease-in-out;
@@ -261,53 +300,16 @@ if(isset($_POST['submit']))
 		  top: 0;
 		  left: 0;
 		}
-	
+
 		#text{
 			color:green;
 			float:right;
 			line-height:70px;
 		}
-	</style>	
-	
+	</style>
+
 	<!-- Buttons Related -->
 	<link rel="stylesheet" type="text/css" href="../css/buttons.css" />
-	
+
 </head>
-
-<body>
-
-<p>
-		<form action='https://formspree.io/theroshin@gmail.com' Method="POST">
-			  <input name="name" placeholder="Name" type="text" value="" required>
-			  <input name="email" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
-			  <span class="validation-text">Please enter a valid email address.</span>
-			  <input name="location" placeholder="Location" type="text" value="" required>
-			  <div class="cflex">
-				<textarea name="message" placeholder="Message" rows="1" required></textarea>	
-				<br>
-				<br>				
-			  </div>
-			  <div id="text" class="button--text-thick button--text-upper button--size-s">&nbsp;&nbsp;&nbsp;
-				<button type='submit' class="btn color-4 material-design button--text-thick button--text-upper button--size-s btn-round" name='submit' value='Submit' >Send</button>
-			</div>
-		</form>
-</p>
-
-<!-- Contact Submit Button -->
-	<script src="../js/m-index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<!--<script>-->
-	<!--$(document).ready(function(){-->
-	    <!--$form = $('form');-->
-	    <!--$form.submit(function(){-->
-	      <!--$.post($(this).attr('action'), $(this).serialize(), function(response){-->
-	    		<!--parent.document.getElementById('form-bg').style.backgroundColor='#f1f1fa';-->
-	      <!--},'json');-->
-	      <!--return false;-->
-	    <!--});-->
-    <!--});-->
-<!--</script>-->
-    
-
-</body>
 </html>
